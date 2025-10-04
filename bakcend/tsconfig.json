@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                // modern JS target
+    "module": "CommonJS",              // nodemon + ts-node kompatibilis
+    "rootDir": "src",                  // TS forrásfájlok mappája
+    "outDir": "dist",                  // fordított JS kimeneti mappa
+    "strict": true,                     // minden TS strict check
+    "esModuleInterop": true,            // default import + require kompatibilitás
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,               // gyorsabb build, nem ellenőrzi a node_modules típusait
+    "resolveJsonModule": true,          // JSON importok engedélyezése
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
